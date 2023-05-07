@@ -1,0 +1,9 @@
+{
+    "name": "Steve",
+    "profession": "Software Engineer",
+    "age": 20,
+    "residence": "S.Korea",
+    "adress": "S.Korea, Busan",
+    "languages": ["Uzbek", "Korean", "English"],
+    "skills": ["HTML", "CSS", "JS", "NodeJS", "PYTHON"]
+}
