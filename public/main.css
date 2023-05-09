@@ -177,7 +177,7 @@
     height: 252px;
     margin-top: 25px;
     margin-left: 45px;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 
@@ -189,7 +189,7 @@
     height: 252px;
     margin-top: 25px;
     margin-left: 45px;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 .main_frame .left_frame .left_5 {
@@ -198,7 +198,7 @@
     height: 252px;
     margin-top: 25px;
     margin-left: 45px;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 .main_frame .left_frame .left_2 {
@@ -315,6 +315,89 @@
     color: #2B2B2B;
 }
 
+.main_frame .left_frame .left_4 .left_4-2 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 49px;
+    height: 24px;
+}
+
+.left_4-2-1 {
+    position: relative;
+    width: 143px;
+    height: 24px;
+
+    /* Paragraph Progress - 15 */
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    /* identical to box height, or 160% */
+
+    text-align: right;
+    text-transform: capitalize;
+    font-feature-settings: 'calt' off, 'kern' off;
+
+    color: #2B2B2B;
+}
+
+.left_4-2-2 {
+
+    position: relative;
+    width: 38px;
+    height: 24px;
+
+    /* Paragraph Progress - 15 */
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    /* identical to box height, or 160% */
+
+    text-transform: capitalize;
+    font-feature-settings: 'calt' off, 'kern' off;
+
+    /* Paragraph Font */
+
+    color: #767676;
+}
+
+.main_frame .left_frame .left_4 {
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    width: 220px;
+    height: 153px;
+}
+
+.left_4-1 {
+
+    position: relative;
+    width: 95px;
+    height: 22px;
+
+    /* H4 - 18px */
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 123.6%;
+    /* or 22px */
+
+    text-transform: capitalize;
+
+    /* Black */
+
+    color: #2B2B2B;
+}
+
 .main_frame .left_frame .left_3 .left_3-2 {
     position: relative;
     display: flex;
@@ -366,4 +449,33 @@
     /* Paragraph Font */
 
     color: #767676;
+}
+.main_frame .left_frame .left_5 .left_5-2 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 49px;
+    height: 24px;
+}
+
+.left_5-2-1 {
+    position: relative;
+    width: 143px;
+    height: 24px;
+
+    /* Paragraph Progress - 15 */
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    /* identical to box height, or 160% */
+
+    text-align: right;
+    text-transform: capitalize;
+    font-feature-settings: 'calt' off, 'kern' off;
+
+    color: #2B2B2B;
 }
