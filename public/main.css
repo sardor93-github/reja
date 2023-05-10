@@ -538,3 +538,11 @@ span {
 
     color: #767676;
 }
+
+/* middle Frame Hosil qilish */
+
+.midd_frame .midd_1 {
+    position: relative;
+    width: 970px;
+    height: 467.09px;
+}
