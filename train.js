@@ -70,3 +70,16 @@ const list = [
 //     else { console.log('javob:', data); }
 // });
 // console.log("passed here 1");
+
+function qoldiqliBolish(a, b, callback){
+    let c = a % b;
+    if (b !== 0){
+        callback(null, c);
+    } else {
+        callback("maxraj manfiy qiymat", null);
+    }
+}
+
+qoldiqliBolish(16, 5, (err, data) => {
+     
+});
