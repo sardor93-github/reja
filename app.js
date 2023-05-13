@@ -16,6 +16,7 @@ fs.readFile("database/user.json", 'utf8', (err, data) => {
 
 
 //MONGO DB connect
+const db = require("./server").db();
 
 
 

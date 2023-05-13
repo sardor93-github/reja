@@ -6,6 +6,7 @@
     "start": "node train.js",
     "dev": "nodemon server.js",
     "train": "nodemon train.js",
+    "task": "nodemon taskD.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
