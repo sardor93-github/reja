@@ -16,6 +16,7 @@ const list = [
 //     else if (a > 20 && a <= 30) return list[1];
 //     else if (a > 30 && a <= 40) return list[2];
 //     else if (a > 40 && a <= 50) return list[3];
+
 //     else if (a > 50 && a <= 60) return list[4];
 //     else {
 //         return new Promise((resolve, reject) => {
