@@ -17,7 +17,7 @@ fs.readFile("database/user.json", 'utf8', (err, data) => {
 
 //MONGO DB connect
 const db = require("./server").db();
-
+const mongodb = require("mongodb");
 
 
 //1 Kirish code
@@ -36,8 +36,8 @@ app.set("view engine", "ejs");
 //4: Routing code
 app.post("/create-item", (req, res) => {
     console.log("user entered /create-item");
-    const new_reja  = req.body.reja;
-    db.collection("plans").insertOne({reja: new_reja}, (err, data) => {
+    const new_reja = req.body.reja;
+    db.collection("plans").insertOne({ reja: new_reja }, (err, data) => {
         console.log(data.ops);
         res.json(data.ops[0]);
         // if (err){
@@ -50,6 +50,16 @@ app.post("/create-item", (req, res) => {
     // res.end("success");    
 });
 
+
+app.post("/delete-item", (req, res) => {
+    const id = req.body.id;
+    db.collection("plans").deleteOne({ _id: new mongodb.ObjectId(id) },
+        function (err, data) {
+            res.json({ state: "success" });
+        }
+    );
+});
+
 app.get("/", function (req, res) {
     console.log('user entered /');
     db.collection("plans").find().toArray((err, data) => {
@@ -57,7 +67,7 @@ app.get("/", function (req, res) {
             console.log(err);
             res.end("something went wrong!!!");
         } else {
-            res.render("reja", {items: data});
+            res.render("reja", { items: data });
         }
     });
 });
