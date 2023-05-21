@@ -60,16 +60,15 @@ app.post("/delete-item", (req, res) => {
 
 //edit code
 app.post("/edit-item", (req, res) => {
-  const data = req.body;
-  console.log(data);
-  db.collection("plans").findOneAndUpdate(
-    { _id: new mongodb.ObjectId(data.id) },
-    { $set: { reja: data.new_input } },
-    function (err, data) {
-      res.json({ state: "success" });
-    }
-  );
-  // res.end("done");
+    const data = req.body;
+    console.log(data);
+    db.collection("plans").findOneAndUpdate(
+        {_id: new mongodb.ObjectId(data.id)}, 
+        {$set: {reja: data.new_input} }, 
+        function(err, data) {
+            res.json({state: "success"}); 
+        })
+    res.end("done");
 });
 
 //delete-all code
