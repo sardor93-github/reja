@@ -70,7 +70,7 @@ app.post("/edit-item", (req, res) => {
         function(err, data) {
             res.json({state: "success"}); 
         })
-    res.end("done");
+    // res.end("done");
 });
 
 //delete-all code
