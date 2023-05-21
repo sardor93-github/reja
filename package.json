@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node train.js",
+    "start": "nodemon server.js",
     "dev": "nodemon server.js",
     "train": "nodemon train.js",
     "task": "nodemon taskD.js",
