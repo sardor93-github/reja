@@ -35,7 +35,6 @@ document.getElementById("create-form").addEventListener("submit", function (e) {
     });
 });
 
-
 document.addEventListener("click", function (e) {
   //delete operation
   console.log(e.target);
@@ -63,12 +62,13 @@ document.addEventListener("click", function (e) {
       axios
         .post("/edit-item", {
           id: e.target.getAttribute("data-id"),
-          new_input: userInput,
+          new_input: userInput
         })
         .then((response) => {
           console.log(response.data);
-          e.target.parentElement.parentElement.querySelector(".item-text")
-            .innerHTML = userInput;
+          e.target.parentElement.parentElement.querySelector(
+            ".item-text"
+          ).innerHTML = userInput;
         })
         .catch((err) => {
           console.log("Iltimos qaytadan urinib ko'ring!!!");
@@ -78,10 +78,8 @@ document.addEventListener("click", function (e) {
 });
 
 document.getElementById("delete-all").addEventListener("click", function () {
-  axios
-    .post("/delete-all", { delete_all: true })
-    .then((respose) => {
-      alert(respose.data.state);
-      document.location.reload();
-    });
+  axios.post("/delete-all", { delete_all: true }).then((respose) => {
+    alert(respose.data.state);
+    document.location.reload();
+  });
 });
