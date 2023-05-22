@@ -1,17 +1,6 @@
 console.log("Web Serverni boshlash");
 const express = require("express");
 const app = express();
-const http = require("http");
-const fs = require("fs");
-
-let user;
-fs.readFile("database/user.json", "utf8", (err, data) => {
-  if (err) {
-    console.log("ERROR:", err);
-  } else {
-    user = JSON.parse(data);
-  }
-});
 
 //MONGO DB connect
 const db = require("./server").db();
@@ -37,14 +26,7 @@ app.post("/create-item", (req, res) => {
   db.collection("plans").insertOne({ reja: new_reja }, (err, data) => {
     console.log(data.ops);
     res.json(data.ops[0]);
-    // if (err){
-    //     console.log(err);
-    //     res.end("Something went wrong");
-    // } else {
-    //     res.end("successfully added");
-    // }
   });
-  // res.end("success");
 });
 
 //delete code
