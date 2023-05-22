@@ -24,34 +24,34 @@ mongodb.connect(connectionString, {
     }
 });
 
-//1 Kirish code
+// //1 Kirish code
 
-app.use(express.static("public"));
-app.use(express.json());
-app.use(express.urlencoded({extended: true}));
+// app.use(express.static("public"));
+// app.use(express.json());
+// app.use(express.urlencoded({extended: true}));
 
-//2: Session code
+// //2: Session code
 
-//3: Views code
+// //3: Views code
 
-app.set("views", "views");
-app.set("view engine", "ejs");
+// app.set("views", "views");
+// app.set("view engine", "ejs");
 
-//4: Routing code
-app.post("/create-item", (req, res) => {
-  //TODO: code with DB here 
-});
+// //4: Routing code
+// app.post("/create-item", (req, res) => {
+//   //TODO: code with DB here 
+// });
 
-app.get("/", function(req, res){
-    res.render("harid");
-});
+// app.get("/", function(req, res){
+//     res.render("harid");
+// });
 
-app.get('/author', (req, res) => {
-    res.render("author", {user: user});
-});
+// app.get('/author', (req, res) => {
+//     res.render("author", {user: user});
+// });
 
-const server = http.createServer(app);
-let PORT = 3000;
-server.listen(PORT, function(){
-    console.log(`The server is running successfully on port: ${PORT}`);
-});
+// const server = http.createServer(app);
+// let PORT = 3000;
+// server.listen(PORT, function(){
+//     console.log(`The server is running successfully on port: ${PORT}`);
+// });
